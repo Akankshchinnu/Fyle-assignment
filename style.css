@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
+body{
+    display:contents
+    font-family: 'Open Sans', sans-serif;
+}
+.bordered-div {
+  border: 2px solid #000000; /* 2px width, solid style, black color */
+  padding: 0px; /* Optional: Add padding to the div */
+}
+html{
+    scroll-behavior: smooth;
+}
+.wrapper{    
+  padding: 40px;
+}
+.logo-container{
+  padding-bottom: 50px;
+}
+.outer-box {
+    width: 300px;
+    height: 300px;
+    position: relative;    
+    background-color: #ccc;
+    border-radius: 50%; 
+  }
+
+  .border-outside {
+    position: absolute;
+    top: -6px; 
+    left: -6px; 
+    width: calc(100% + 12px); 
+    height: calc(100% + 12px); 
+    border: 2px solid rgb(169, 164, 164); 
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  .border-outside:hover{
+    transform: scale(1.03);
+  }
+  
+  .content {
+    position: absolute;
+    padding: 120px; 
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    font-size: 50px;
+    color: #333;
+  }
+.border-outside-container {
+    padding: 100px;
+    padding-top: 50px;
+    align-self: center;
+    text-align: center;
+    margin-left: 300px;
+}
+h3{
+    font-size: 70px;
+    align-self: top;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+h4{
+    align-self: top;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+h5{
+    align-self: top;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.listPage{
+  padding:10px;
+  text-align: center;
+  list-style: none;
+}
+.listPage li{
+  background-color: #ffffffBD;
+  padding:20px;
+  display: inline-block;
+  border: 2px #000000;  
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.listPage .active{
+  background-color: #4b08d1;
+  color:#fff;
+}
+.fa-map-marker{
+  height: 32px;
+  font-size: 17px;
+  max-width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 5px;
+
+}
+.b-container{
+  height: 32px;
+  max-width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  gap: 8px;
+  padding-inline: 5px;
+  padding-left: 40px;
+  padding-top: 60px;
+
+}
+
+#repositoryList {
+  margin-left: 20px;
+}
+
+.repositoryItem {
+  border: 1px solid #ddd;
+  padding: 0px;
+}
+
+#loader {
+  display: none;
+  margin: 20px;
+  text-align: center;
+}
+
+
+
+#searchBar {
+  padding-left: 900px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    gap: 30px; 
+    margin: 20px; 
+    padding-bottom: 120px;
+  }
+.rectangle-box {
+    display: inline-block;
+    width: 500px; 
+    border: 2px solid #333; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+.rectangle-box:nth-child(2) {
+    margin-left: 40px;
+  }
+.rectangle-box:nth-child(4) {
+    margin-left: 40px;
+  }
+.rectangle-box:nth-child(6) {
+    margin-left: 40px;
+  }
+.rectangle-box:nth-child(8) {
+    margin-left: 40px;
+  }
+.rectangle-box:nth-child(10) {
+    margin-left: 40px;
+  }
+.rectangle-box:nth-child(12) {
+    margin-left: 40px;
+  }
+.rectangle-box h1{
+    margin: 0px;
+    font-size: 70px;
+    color: blue;
+    text-align: left;
+    padding: 0px 0;
+
+}
+.rectangle-box h2{
+    font-size: 30px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.button-container{
+    display: flex;
+    margin-top: 10px;
+}
+.btn{
+    color: rgb(251, 251, 251);
+    border: none;
+    outline: none;
+    font-size: 10px;
+    margin: 4px;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: rgb(39, 39, 241);
+    border-radius: 10px;
+}
+.btn:hover{
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.rectangle-box:hover{
+    transform: scale(1.03);
+    cursor: default;    
+}

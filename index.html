@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Github Protofolio</title>
+</head>
+<body>
+    <div class="bordered-div">
+    <div class="wrapper">
+        <div class="logo-container">
+            <div class="outer-box">
+                <div class="border-outside"></div>
+                <div class="content">
+                    <p>Image</p>                
+                </div>                
+                <div class="border-outside-container">
+                    <h3>John&nbsp;Doe</h3>
+                    <h4>Bio&nbsp;goes&nbsp;here</h4>
+                    <i class="fa fa-map-marker" aria-hidden="true"><span class="label">&nbsp;&nbsp;Orlando</span></i>
+                    <h5>Twitter:&nbsp;https://Twitter.com/john_doe</h5>
+                </div>                
+            </div>  
+            <div class="b-container">
+                <img src="icons8-link-24.png" alt="">
+                <span class="label">&nbsp;https://github.com/john_doe</span>
+            </div>          
+        </div>
+        
+        <div id="searchBar">
+            <input type="text" id="searchInput" placeholder="Search repositories">
+            <button onclick="searchRepositories()">Search</button>
+        </div>
+          
+        <div id="repositoryList"></div>
+          
+        <div id="loader">Loading...</div>
+                         
+        <div class="pagination">
+            <label for="reposPerPage">Repositories per page:</label>
+                <select id="reposPerPage" onchange="changePerPage()">
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+            <div class="container">                              
+            <div class="grid-container">
+                <div class="list">
+                    <div class="item">
+                        <div class="rectangle-box">
+                            <h1>Heroes</h1>
+                            <h2>description goes here</h2>
+                            <div class="button-container">
+                                <a href="https://www.javascripttutorial.net/what-is-javascript/"  class="btn">Javascript</a>
+                                <a href="https://www.w3schools.com/angular/" class="btn">angular</a>
+                                <a href="https://angularjs.org/" class="btn">angularjs</a>
+                                <a href="https://en.wikipedia.org/wiki/Angular_(web_framework)" class="btn">Angular 2+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <div class="rectangle-box">
+                            <h1>Heroes</h1>
+                            <h2>description goes here</h2>
+                            <div class="button-container">
+                                <a href="https://www.javascripttutorial.net/what-is-javascript/"  class="btn">Javascript</a>
+                                <a href="https://www.w3schools.com/angular/" class="btn">angular</a>
+                                <a href="https://angularjs.org/" class="btn">angularjs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">    
+                        <div class="rectangle-box">
+                            <h1>Heroes </h1>
+                            <h2>description goes here</h2>
+                            <div class="button-container">
+                                <a href="https://www.javascripttutorial.net/what-is-javascript/"  class="btn">Javascript</a>
+                                <a href="https://www.w3schools.com/angular/" class="btn">angular</a>
+                                <a href="https://angularjs.org/" class="btn">angularjs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <div class="rectangle-box">
+                            <h1>Heroes</h1>
+                            <h2>description goes here</h2>
+                            <div class="button-container">
+                                <a href="https://www.javascripttutorial.net/what-is-javascript/"  class="btn">Javascript</a>
+                                <a href="https://www.w3schools.com/angular/" class="btn">angular</a>
+                                <a href="https://angularjs.org/" class="btn">angularjs</a>
+                                <a href="https://en.wikipedia.org/wiki/Angular_(web_framework)" class="btn">Angular 2+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <div class="rectangle-box">
+                            <h1>Heroes</h1>
+                            <h2>description goes here</h2>
+                            <div class="button-container">
+                                <a href="https://www.javascripttutorial.net/what-is-javascript/"  class="btn">Javascript</a>
+                                <a href="https://www.w3schools.com/angular/" class="btn">angular</a>
+                                <a href="https://angularjs.org/" class="btn">angularjs</a>
+                                <a href="https://en.wikipedia.org/wiki/Angular_(web_framework)" class="btn">Angular 2+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <div class="rectangle-box">
+                            <h1>Heroes</h1>
+                            <h2>description goes here</h2>
+                            <div class="button-container">
+                                <a href="https://www.javascripttutorial.net/what-is-javascript/"  class="btn">Javascript</a>
+                                <a href="https://www.w3schools.com/angular/" class="btn">angular</a>
+                                <a href="https://angularjs.org/" class="btn">angularjs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            </div>
+            <ul class="listPage">
+                 <li class="active">1</li>
+                 <li>2</li>
+                 <li>3</li>
+                 <li>4</li>
+                 <li>5</li>
+                 <li>6</li>
+                 <li>7</li>
+                 <li>8</li>
+                 <li>9</li>                           
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
